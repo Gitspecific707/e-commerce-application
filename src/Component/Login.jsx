@@ -22,7 +22,7 @@ const Login = () => {
   const handleLogin = async () => {
     console.log({ email, password });
 
-    let result = await fetch("http://localhost:5000/login", {
+    let result = await fetch("http://localhost:7000/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },

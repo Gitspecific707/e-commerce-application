@@ -19,7 +19,7 @@ const SignUp = () => {
     const handleClick=async()=>
         {
             console.warn(name,email,city,password);
-            let result=await fetch('http://localhost:5000/register',{
+            let result=await fetch('http://localhost:7000/register',{
               method:'POST',
               body:JSON.stringify({name,email,city,password}),
               headers:{'Content-Type':'application/json'},
