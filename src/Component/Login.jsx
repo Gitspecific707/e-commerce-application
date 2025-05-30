@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  console.log("hello git")
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const navigate=useNavigate();
