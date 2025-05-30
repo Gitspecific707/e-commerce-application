@@ -52,7 +52,7 @@ const Login = () => {
         value={password}
         className="inputbox"
         onChange={(e) => setPassword(e.target.value)}
-        placeholder="Enter Email"
+        placeholder="Enter Password"
       ></input>
 
       <button onClick={handleLogin} className="SignUpbtn">
