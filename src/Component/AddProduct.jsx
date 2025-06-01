@@ -43,9 +43,9 @@ setPrice('');
     <div className='inputbox'>
     <h2>Add Product Details..</h2>
       <input type='text' className='inputbox' value={name} onChange={(e)=>setName(e.target.value)} placeholder='Enter product name'></input>
-     {error && !name && <span>Enter valid name!!</span>} 
+     {error && !name && <span>Enter valid Name!!</span>} 
       <input type='text' className='inputbox' value={price} onChange={(e)=>setPrice(e.target.value)} placeholder='Enter product price'></input>
-     {error && !price && <span>Enter valid price!!</span> } 
+     {error && !price && <span>Enter valid Price!!</span> } 
       <input type='text' className='inputbox' value={category} onChange={(e)=>setCategory(e.target.value)} placeholder='Enter product Category'></input>
       {error && !category && <span>Enter valid category!!</span>}
       <input type='text' className='inputbox'  value={company} placeholder='Enter product company' onChange={(e)=>setCompany(e.target.value)}></input>
