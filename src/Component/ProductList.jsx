@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 const ProductList = () => {
   const [product, setProduct] = useState([]);
 
+  console.log("all product list here", product);
+
   useEffect(() => {
     productList();
   }, []);
@@ -40,7 +42,7 @@ else{
     result = await result.json();
     setProduct(result);
   };
-  console.log(product);
+  
   return (
     <>
       <div className="product-list">
